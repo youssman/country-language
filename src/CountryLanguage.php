@@ -14,7 +14,7 @@ class CountryLanguage {
      * @return array|string returns an array or a string if error
      */
     public static function getLanguageCodes($languageCodeType) {
-        $dataPath = '../data.json';
+        $dataPath = realpath(dirname(__FILE__)) . '/data.json';
         $data = json_decode(file_get_contents($dataPath));
 
         $languages = $data['languages'];
@@ -47,7 +47,7 @@ class CountryLanguage {
      * @return array|string returns an array or a string if error
      */
     public static function getCountryCodes($countryCodeType) {
-        $dataPath = '../data.json';
+        $dataPath = realpath(dirname(__FILE__)) . '/data.json';
         $data = json_decode(file_get_contents($dataPath));
 
         $countries = $data['countries'];
@@ -180,7 +180,7 @@ class CountryLanguage {
             return 'Wrong type of country code provided';
         }
 
-        $dataPath = '../data.json';
+        $dataPath = realpath(dirname(__FILE__)) . '/data.json';
         $data = json_decode(file_get_contents($dataPath));
         $countries = $data['countries'];
 
@@ -237,7 +237,7 @@ class CountryLanguage {
             return 'Wrong type of language code provided';
         }
 
-        $dataPath = '../data.json';
+        $dataPath = realpath(dirname(__FILE__)) . '/data.json';
         $data = json_decode(file_get_contents($dataPath));
         $languages = $data['languages'];
 
@@ -381,7 +381,7 @@ class CountryLanguage {
      * @return array
      */
     public static function getCountries() {
-        $dataPath = '../data.json';
+        $dataPath = realpath(dirname(__FILE__)) . '/data.json';
         $data = json_decode(file_get_contents($dataPath));
 
         return $data['countries'];
@@ -396,7 +396,7 @@ class CountryLanguage {
      * @return array
      */
     public static function getLanguages() {
-        $dataPath = '../data.json';
+        $dataPath = realpath(dirname(__FILE__)) . '/data.json';
         $data = json_decode(file_get_contents($dataPath));
 
         return $data['languages'];
@@ -409,7 +409,7 @@ class CountryLanguage {
      * @return array
      */
     public static function getLanguageFamilies() {
-        $dataPath = '../data.json';
+        $dataPath = realpath(dirname(__FILE__)) . '/data.json';
         $data = json_decode(file_get_contents($dataPath));
 
         return $data['languageFamilies'];
@@ -426,7 +426,7 @@ class CountryLanguage {
      * @return array
      */
     public static function getLocales($mode = false) {
-        $dataPath = '../data.json';
+        $dataPath = realpath(dirname(__FILE__)) . '/data.json';
         $data = json_decode(file_get_contents($dataPath));
 
         $locales = $data['locales'];
@@ -461,7 +461,7 @@ class CountryLanguage {
             return 'No language family provided';
         }
 
-        $dataPath = '../data.json';
+        $dataPath = realpath(dirname(__FILE__)) . '/data.json';
         $data = json_decode(file_get_contents($dataPath));
 
         $languages = $data['languages'];
