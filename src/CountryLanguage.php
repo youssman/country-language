@@ -288,9 +288,9 @@ class CountryLanguage {
         }
 
         foreach ($country['languages'] as $language) {
-            $codes['iso639_1'] = $language['iso639_1'];
-            $codes['iso639_2'] = $language['iso639_2en'];
-            $codes['iso639_3'] = $language['iso639_3'];
+            $codes[]['iso639_1'] = $language['iso639_1'];
+            $codes[]['iso639_2'] = $language['iso639_2en'];
+            $codes[]['iso639_3'] = $language['iso639_3'];
         }
 
         return $codes;
@@ -318,9 +318,9 @@ class CountryLanguage {
         }
 
         foreach ($language['countries'] as $country) {
-            $codes['code_2'] = $language['code_2'];
-            $codes['code_3'] = $language['code_3'];
-            $codes['numCode'] = $language['numCode'];
+            $codes[]['code_2'] = $language['code_2'];
+            $codes[]['code_3'] = $language['code_3'];
+            $codes[]['numCode'] = $language['numCode'];
         }
 
         return $codes;
