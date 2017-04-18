@@ -1,5 +1,5 @@
 {
-    "name": "youssman/CountryLanguage",
+    "name": "youssman/country-language",
     "description": "Get any country's spoken languages or find countries where a language is spoken.",
     "keywords": ["country", "language", "native", "php", "country-codes", "language-codes"],
     "type": "package",
