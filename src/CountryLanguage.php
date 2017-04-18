@@ -218,7 +218,7 @@ class CountryLanguage {
      * @return array
      */
     public static function getLanguage($languageCode, $noCountryInfo = false) {
-        if (!is_string($countryCode) || empty($countryCode)) {
+        if (!is_string($languageCode) || empty($languageCode)) {
             return 'No language code provided';
         }
 
