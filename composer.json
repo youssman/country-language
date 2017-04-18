@@ -1,0 +1,21 @@
+{
+    "name": "youssman/CountryLanguage",
+    "description": "Get any country's spoken languages or find countries where a language is spoken.",
+    "keywords": ["country", "language", "native", "php", "country-codes", "language-codes"],
+    "type": "package",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "authors": [{
+        "name": "Youssef HAITI", 
+        "email": "haiti.youssef@gmail.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "Youssman\\": "Youssman/"
+        }
+    },
+    "version": "1.0.0",
+    "minimum-stability": "dev"
+}
