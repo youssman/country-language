@@ -321,9 +321,9 @@ class CountryLanguage {
 
         foreach ($language['countries'] as $country) {
             $codes[] = [
-                    'code_2' => $language['code_2'], 
-                    'code_3' => $language['code_3'], 
-                    'numCode' => $language['numCode']
+                    'code_2' => $country['code_2'], 
+                    'code_3' => $country['code_3'], 
+                    'numCode' => $country['numCode']
                 ];
         }
 
